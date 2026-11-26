@@ -73,7 +73,7 @@
     var botaoRecomecar = document.getElementById("triagem-recomecar");
     var atual = 0;
 
-    // [A CONFIRMAR] Limites dos três níveis definidos pela equipa, a rever com o ICAD ou a Dianova.
+    // Limites dos três níveis (0 / 1–2 / 3–5 respostas "sim"), confirmados pela equipa.
     var NIVEIS = [
       {
         maximo: 0,
