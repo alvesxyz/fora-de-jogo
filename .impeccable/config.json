@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-26T01:28:54.293Z",
+        "reason": "Claude verified computed styles in Chromium: .seccao padding-top 71px, .dado 20px, summary 12px; static detector cannot resolve clamp()/var()"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-26T01:28:54.302Z",
+        "reason": "Claude verified computed styles: legend line-height 1.35, .pergunta__numero 1.35 (>=1.3)"
+      }
+    ]
+  }
+}

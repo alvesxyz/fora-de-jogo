@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fora de Jogo · A única jogada certa é pedir ajuda</title>
+  <meta name="description" content="Campanha sobre perturbação do jogo, em colaboração com a União de Leiria. Triagem anónima, assistente de orientação e contactos de ajuda. Fala. Liga 1414.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFC400' d='M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3.1 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.7 0 5.9 3.8 4.4 7.2C19.5 16.4 12 21 12 21z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo__interior">
+      <a class="marca" href="#conteudo" aria-label="Fora de Jogo, início">
+        <svg class="marca__coracao" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3.1 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.7 0 5.9 3.8 4.4 7.2C19.5 16.4 12 21 12 21z"/></svg>
+        <span>Fora de Jogo</span>
+      </a>
+      <nav aria-label="Secções da página">
+        <ul class="nav">
+          <li><a href="#ajuda">Ajuda</a></li>
+          <li><a href="#triagem">Triagem</a></li>
+          <li><a href="#assistente">Assistente</a></li>
+          <li><a href="#fica-por-dentro">Fica por dentro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- 1. Topo -->
+    <section class="abertura" aria-labelledby="titulo-principal">
+      <div class="contentor">
+        <h1 id="titulo-principal">Fora de Jogo</h1>
+        <p class="abertura__linha">Há um jogo que ninguém vê. Joga-se sozinho, num ecrã.</p>
+        <p class="abertura__slogan">A única jogada certa é pedir ajuda.</p>
+
+        <a class="ligar" href="tel:1414" data-ajuda="1414-topo">
+          <span class="ligar__apelo">Fala. Liga 1414.</span>
+          <span class="ligar__nota">Linha confidencial do ICAD. Toca para ligar.</span>
+        </a>
+
+        <div class="abertura__botoes">
+          <a class="botao botao--contorno" href="#triagem">Fazer a triagem</a>
+          <a class="botao botao--contorno" href="#ajuda">Ver contactos de ajuda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Ajuda imediata -->
+    <section id="ajuda" class="seccao" aria-labelledby="titulo-ajuda">
+      <div class="contentor">
+        <h2 id="titulo-ajuda">Ajuda imediata</h2>
+        <p>Não precisas de ter tudo resolvido para ligar. Basta dizeres o que se passa.</p>
+
+        <ul class="contactos">
+          <li class="contacto contacto--destaque">
+            <h3>Linha 1414 do ICAD</h3>
+            <p>Linha confidencial para quem joga e para quem está perto. <span class="por-confirmar">[A CONFIRMAR: horário e custo da chamada]</span></p>
+            <a class="botao botao--cheio" href="tel:1414" data-ajuda="1414">
+              <svg class="icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+              Ligar 1414
+            </a>
+          </li>
+          <li class="contacto">
+            <h3>SNS 24</h3>
+            <p>Para falar com um profissional de saúde. Número: <span class="numero">808 24 24 24</span> <span class="por-confirmar">[A CONFIRMAR]</span></p>
+            <a class="botao botao--contorno" href="tel:808242424" data-ajuda="sns24">Ligar SNS 24</a>
+          </li>
+          <li class="contacto">
+            <h3>Emergência: 112</h3>
+            <p>Se tu ou outra pessoa estão em perigo agora. <span class="por-confirmar">[A CONFIRMAR]</span></p>
+            <a class="botao botao--contorno" href="tel:112" data-ajuda="112">Ligar 112</a>
+          </li>
+          <li class="contacto">
+            <h3>Autoexclusão do SRIJ</h3>
+            <p>Podes pedir para deixar de ter acesso aos sites de jogo legais em Portugal. Endereço do portal: <span class="por-confirmar">[A CONFIRMAR]</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Vídeo do capitão (relatório, secção 17) -->
+    <section id="video" class="seccao" aria-labelledby="titulo-video">
+      <div class="contentor">
+        <h2 id="titulo-video">O vídeo do capitão</h2>
+        <p>Se ainda não o viste, o capitão da União de Leiria explica em pouco mais de um minuto porque é que falar é a única jogada certa.</p>
+        <div class="video-reservado">
+          <p><strong>Vídeo em produção.</strong> <span class="por-confirmar">[A CONFIRMAR: ficheiro do vídeo]</span></p>
+          <p>Vai ter legendas e transcrição, e só começa quando carregares em reproduzir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Três dados (relatório, secção 17) -->
+    <section id="dados" class="seccao" aria-labelledby="titulo-dados">
+      <div class="contentor">
+        <h2 id="titulo-dados">O que está em jogo</h2>
+        <dl class="dados">
+          <div class="dado">
+            <dt>69,9%</dt>
+            <dd>das apostas desportivas em Portugal foram no futebol, no 2.º trimestre de 2026. <cite>SRIJ, 2026</cite></dd>
+          </div>
+          <div class="dado">
+            <dt>36,2%</dt>
+            <dd>dos novos registos de jogadores têm entre 18 e 24 anos. <cite>SRIJ, 2026</cite></dd>
+          </div>
+          <div class="dado">
+            <dt>782</dt>
+            <dd>pessoas em tratamento por perturbação do jogo no ICAD em 2025. Em 2023 eram 358. <cite>ICAD, citado pelo DN e pelo Observador, 2026</cite></dd>
+          </div>
+        </dl>
+        <p>A perturbação do jogo é uma condição de saúde. Não é falta de força de vontade, e tem tratamento.</p>
+      </div>
+    </section>
+
+    <!-- Cinco sinais (relatório, secção 16.4) -->
+    <section id="sinais" class="seccao" aria-labelledby="titulo-sinais">
+      <div class="contentor">
+        <h2 id="titulo-sinais">Cinco sinais de que o jogo já pesa</h2>
+        <ul class="sinais">
+          <li>Esconder ou mentir sobre as apostas.</li>
+          <li>Sentir irritação quando se tenta apostar menos.</li>
+          <li>Apostar para recuperar o que se perdeu.</li>
+          <li>Pedir dinheiro emprestado para apostar.</li>
+          <li>Os estudos, o trabalho ou as relações começarem a sofrer.</li>
+        </ul>
+        <p class="nota">Adaptado dos critérios do manual de diagnóstico da Associação Americana de Psiquiatria (DSM-5). Não é um diagnóstico. <span class="por-confirmar">[A CONFIRMAR: revisão pelo ICAD ou pela Dianova]</span></p>
+      </div>
+    </section>
+
+    <!-- 3. Triagem -->
+    <section id="triagem" class="seccao" aria-labelledby="titulo-triagem">
+      <div class="contentor">
+        <h2 id="titulo-triagem">Triagem anónima</h2>
+        <p>Cinco perguntas de sim ou não. Demora dois minutos. Não pedimos dados pessoais e as respostas não saem do teu telemóvel.</p>
+        <p class="aviso"><strong>Esta triagem não é um diagnóstico e não substitui uma avaliação por um profissional de saúde.</strong> Serve só para te ajudar a pensar no assunto.</p>
+        <p class="nota">Se chegaste aqui a partir do simulador do projeto Vício Invisível: esse simulador imita uma casa de apostas de propósito, para mostrar como funcionam. Não é real.</p>
+
+        <form id="form-triagem" method="post" action="#" class="triagem" novalidate>
+          <p class="triagem__instrucao">Pensa nos últimos 12 meses.</p>
+
+          <fieldset class="pergunta" data-pergunta="1">
+            <legend><span class="pergunta__numero">Pergunta 1 de 5.</span> Já escondeste de alguém próximo quanto apostas, ou mentiste sobre isso?</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="p1" value="sim"> Sim</label>
+              <label class="opcao"><input type="radio" name="p1" value="nao"> Não</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="pergunta" data-pergunta="2">
+            <legend><span class="pergunta__numero">Pergunta 2 de 5.</span> Sentes irritação ou inquietação quando tentas apostar menos ou parar?</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="p2" value="sim"> Sim</label>
+              <label class="opcao"><input type="radio" name="p2" value="nao"> Não</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="pergunta" data-pergunta="3">
+            <legend><span class="pergunta__numero">Pergunta 3 de 5.</span> Já voltaste a apostar para tentar recuperar dinheiro que tinhas perdido?</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="p3" value="sim"> Sim</label>
+              <label class="opcao"><input type="radio" name="p3" value="nao"> Não</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="pergunta" data-pergunta="4">
+            <legend><span class="pergunta__numero">Pergunta 4 de 5.</span> Já pediste dinheiro emprestado para apostar?</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="p4" value="sim"> Sim</label>
+              <label class="opcao"><input type="radio" name="p4" value="nao"> Não</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="pergunta" data-pergunta="5">
+            <legend><span class="pergunta__numero">Pergunta 5 de 5.</span> As apostas já afetaram os teus estudos, o teu trabalho ou as tuas relações?</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="p5" value="sim"> Sim</label>
+              <label class="opcao"><input type="radio" name="p5" value="nao"> Não</label>
+            </div>
+          </fieldset>
+
+          <p id="triagem-erro" class="erro" role="alert" hidden></p>
+
+          <div class="triagem__navegacao">
+            <button type="button" class="botao botao--contorno" id="triagem-anterior" hidden>Pergunta anterior</button>
+            <button type="button" class="botao botao--cheio" id="triagem-seguinte" hidden>Pergunta seguinte</button>
+            <button type="submit" class="botao botao--cheio" id="triagem-ver">Ver resultado</button>
+          </div>
+        </form>
+
+        <div id="triagem-resultado" class="resultado" role="region" aria-labelledby="resultado-titulo" hidden>
+          <h3 id="resultado-titulo" tabindex="-1"></h3>
+          <p id="resultado-texto"></p>
+          <p><strong>Lembra-te: isto não é um diagnóstico e não substitui uma avaliação profissional.</strong> O resultado não fica guardado em lado nenhum.</p>
+          <div class="resultado__acoes">
+            <a class="botao botao--cheio" href="tel:1414" data-ajuda="1414-triagem">Ligar 1414</a>
+            <button type="button" class="botao botao--contorno" id="triagem-recomecar">Recomeçar a triagem</button>
+          </div>
+        </div>
+
+        <p class="nota">Perguntas adaptadas dos cinco sinais de alerta da campanha, numa versão reduzida inspirada no Problem Gambling Severity Index (PGSI). Não estão validadas. <span class="por-confirmar">[A CONFIRMAR: perguntas e limites dos três níveis, a rever com o ICAD ou a Dianova]</span></p>
+        <noscript><p class="aviso">A triagem precisa de JavaScript para mostrar o resultado. Os contactos de ajuda funcionam sem ele.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Conheces alguém? (relatório, secções 17 e 18.4) -->
+    <section id="amigo" class="seccao" aria-labelledby="titulo-amigo">
+      <div class="contentor">
+        <h2 id="titulo-amigo">Conheces alguém?</h2>
+        <p>Não precisas de ter as respostas. Só de estar lá.</p>
+        <ol class="passos">
+          <li><strong>Escolhe um momento calmo.</strong> Longe do jogo e sem pressa.</li>
+          <li><strong>Diz o que notaste, sem acusar.</strong> Fala do que viste, não do que achas que a pessoa é.</li>
+          <li><strong>Oferece-te para ir com a pessoa pedir ajuda.</strong> Podem ligar juntos para o 1414.</li>
+        </ol>
+        <p class="nota"><span class="por-confirmar">[A CONFIRMAR: passos a rever por um profissional do ICAD ou da Dianova]</span></p>
+        <button type="button" class="botao botao--contorno" id="abrir-amigo">Falar com o assistente sobre um amigo</button>
+      </div>
+    </section>
+
+    <!-- 4. Chatbot de orientação -->
+    <section id="assistente" class="seccao" aria-labelledby="titulo-assistente">
+      <div class="contentor">
+        <h2 id="titulo-assistente">Assistente de orientação</h2>
+        <p class="aviso" id="assistente-aviso"><strong>Ferramenta automática.</strong> Não estás a falar com uma pessoa. Não faz diagnósticos nem dá conselhos médicos. Encaminha-te para o 1414 e para profissionais. Não guarda o que escreves.</p>
+
+        <noscript><p class="aviso">O assistente precisa de JavaScript. Os contactos de ajuda funcionam sem ele.</p></noscript>
+        <div class="chat">
+          <h3 class="visualmente-oculto" id="chat-historico-titulo">Conversa</h3>
+          <div id="chat-registo" class="chat__registo" role="log" aria-live="polite" aria-labelledby="chat-historico-titulo" tabindex="0">
+          </div>
+
+          <div class="chat__rapidas" id="chat-rapidas" role="group" aria-label="Respostas rápidas">
+            <button type="button" class="botao botao--pequeno" data-mensagem="Preciso de ajuda">Preciso de ajuda</button>
+            <button type="button" class="botao botao--pequeno" data-mensagem="Quero ajudar um amigo">Quero ajudar um amigo</button>
+            <button type="button" class="botao botao--pequeno" data-mensagem="O que é a perturbação do jogo?">O que é a perturbação do jogo?</button>
+          </div>
+
+          <form id="chat-form" method="post" action="#" class="chat__form" novalidate>
+            <label for="chat-mensagem">Escreve a tua mensagem</label>
+            <p class="dica" id="chat-dica">Carrega em Enter ou no botão Enviar.</p>
+            <div class="chat__linha">
+              <input type="text" id="chat-mensagem" name="mensagem" autocomplete="off" aria-describedby="chat-dica chat-erro" maxlength="300">
+              <button type="submit" class="botao botao--cheio">Enviar</button>
+            </div>
+            <p id="chat-erro" class="erro" hidden></p>
+          </form>
+
+          <div class="chat__saida">
+            <a class="botao botao--contorno" href="#ajuda" id="chat-sair">Sair e ver contactos de ajuda</a>
+            <button type="button" class="botao botao--contorno" id="chat-recomecar">Recomeçar conversa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Formulário Fica por dentro -->
+    <section id="fica-por-dentro" class="seccao" aria-labelledby="titulo-fica">
+      <div class="contentor">
+        <h2 id="titulo-fica">Fica por dentro</h2>
+        <p>Deixa o teu e-mail para receberes as novidades da campanha. São três e-mails em 30 dias, e podes cancelar quando quiseres.</p>
+
+        <div class="vantagem">
+          <h3>Os primeiros 100 inscritos</h3>
+          <p>Passam um dia com a equipa principal da União de Leiria e têm acesso aos camarotes VIP em dois jogos em casa, à escolha do clube.</p>
+          <p><strong>Não é um sorteio.</strong> Conta a ordem de inscrição. Numa campanha sobre o jogo, um prémio à sorte não faria sentido.</p>
+          <p>50 das 100 vagas ficam reservadas a pessoas que não são sócias do clube.</p>
+          <p class="nota">Só para maiores de 18 anos. Regulamento: <span class="por-confirmar">[A CONFIRMAR com o clube]</span></p>
+        </div>
+
+        <noscript><p class="aviso">A inscrição precisa de JavaScript nesta versão de demonstração.</p></noscript>
+        <form id="form-inscricao" method="post" action="#" class="inscricao" novalidate>
+          <p id="inscricao-resumo" class="erro erro--resumo" hidden tabindex="-1"></p>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <p class="dica" id="email-dica">Por exemplo: nome@exemplo.pt</p>
+            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" aria-describedby="email-dica email-erro" required>
+            <p class="erro" id="email-erro" hidden></p>
+          </div>
+
+          <div class="campo campo--caixa">
+            <p class="dica" id="consentimento-dica">Usamos o e-mail só para as comunicações desta campanha. Não o partilhamos e não o ligamos ao resultado da triagem.</p>
+            <div class="caixa">
+              <input type="checkbox" id="consentimento" name="consentimento" aria-describedby="consentimento-dica consentimento-erro" required>
+              <label for="consentimento">Aceito receber e-mails da campanha Fora de Jogo. Sei que posso cancelar a qualquer momento.</label>
+            </div>
+            <p class="erro" id="consentimento-erro" hidden></p>
+          </div>
+
+          <div class="campo campo--caixa">
+            <div class="caixa">
+              <input type="checkbox" id="maior-idade" name="maior-idade" aria-describedby="idade-erro" required>
+              <label for="maior-idade">Confirmo que tenho 18 anos ou mais.</label>
+            </div>
+            <p class="erro" id="idade-erro" hidden></p>
+          </div>
+
+          <button type="submit" class="botao botao--cheio">Inscrever-me</button>
+          <div id="inscricao-estado" class="estado" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- O clube e a causa, perguntas frequentes (relatório, secção 17) -->
+    <section id="clube" class="seccao" aria-labelledby="titulo-clube">
+      <div class="contentor">
+        <h2 id="titulo-clube">A União de Leiria e a causa</h2>
+        <p>A União de Leiria nunca teve casas de apostas como parceiras. Por isso pode falar disto sem contradições.</p>
+        <p>A campanha inclui uma camisola solidária de edição limitada. 90% do lucro líquido de cada camisola vai para a Associação Dianova Portugal, que trata a perturbação do jogo. <span class="por-confirmar">[A CONFIRMAR: acordo escrito com a Dianova]</span></p>
+
+        <h3>Perguntas frequentes</h3>
+        <div class="perguntas">
+          <details>
+            <summary><span>A triagem é mesmo anónima?</span><svg class="perguntas__icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Sim. Não pede nome nem contacto. As respostas ficam só no teu telemóvel enquanto a página está aberta e não são guardadas.</p>
+          </details>
+          <details>
+            <summary><span>O assistente é uma pessoa?</span><svg class="perguntas__icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Não. É uma ferramenta automática com respostas fechadas. Não avalia, não diagnostica e não aconselha tratamentos. Para falar com uma pessoa, liga 1414.</p>
+          </details>
+          <details>
+            <summary><span>O que fazem com o meu e-mail?</span><svg class="perguntas__icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Só o usamos para as comunicações da campanha: três e-mails em 30 dias. Cada e-mail tem uma ligação para cancelar. Nunca o ligamos ao resultado da triagem.</p>
+          </details>
+          <details>
+            <summary><span>Quem está por trás da campanha?</span><svg class="perguntas__icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></summary>
+            <p>Um grupo de estudantes do CTeSP em Comunicação Digital da Universidade de Leiria e Oeste, em colaboração com a União de Leiria. O clube cede os seus canais e nada sai em nome dele sem a sua aprovação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Rodapé -->
+  <footer class="rodape">
+    <div class="contentor">
+      <p class="rodape__apelo">Fala. Liga <a href="tel:1414" data-ajuda="1414-rodape">1414</a>.</p>
+      <p>Campanha em colaboração com a União de Leiria.</p>
+      <p class="por-confirmar">[A CONFIRMAR: emblema da União de Leiria, segundo o manual de identidade do clube]</p>
+      <p>Projeto académico do CTeSP em Comunicação Digital, Universidade de Leiria e Oeste.</p>
+      <p>Autores: António Barbosa, Daniel Gonçalves e Miguel Alves.</p>
+      <p><strong>As ações descritas nesta página fazem parte de um projeto fictício.</strong> A União de Leiria, a Dianova e o ICAD não participaram neste projeto. As personagens e o simulador do projeto Vício Invisível são fictícios.</p>
+      <h2 class="rodape__titulo">Privacidade</h2>
+      <p>Esta página não usa cookies nem analytics. A triagem e o assistente não guardam nada. Nesta versão de demonstração, o e-mail do formulário fica guardado só neste dispositivo. <span class="por-confirmar">[A CONFIRMAR: texto revisto pelo responsável de proteção de dados do clube]</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

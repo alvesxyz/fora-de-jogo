@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-26T12:00:00Z",
+  "title": "Design System: Fora de Jogo",
+  "extensions": {
+    "colorMeta": {
+      "fundo": { "role": "neutral", "displayName": "Pitch Black", "canonical": "#000000", "cssVar": "--fundo", "tonalRamp": ["#000000", "#121212", "#1e1e1e", "#2e2e2c", "#4a4a46", "#73736d", "#c4c4be", "#ffffff"] },
+      "painel": { "role": "neutral", "displayName": "Stand Grey", "canonical": "#1e1e1e", "cssVar": "--painel", "contrast": { "texto": "16.67:1" }, "tonalRamp": ["#0a0a0a", "#141414", "#1e1e1e", "#2a2a2a", "#3a3a3a", "#5a5a5a", "#9a9a9a", "#e0e0e0"] },
+      "texto": { "role": "neutral", "displayName": "Floodlight White", "canonical": "#ffffff", "cssVar": "--texto", "tonalRamp": ["#1e1e1e", "#3a3a3a", "#5a5a5a", "#7a7a7a", "#a0a0a0", "#c8c8c8", "#e8e8e8", "#ffffff"] },
+      "texto-2": { "role": "neutral", "displayName": "Stone Grey", "canonical": "#9a9a94", "cssVar": "--texto-2", "contrast": { "fundo": "7.42:1", "painel": "5.89:1" }, "tonalRamp": ["#1e1e1c", "#33332f", "#4a4a46", "#555550", "#73736d", "#9a9a94", "#c4c4be", "#f1f1ec"] },
+      "amarelo": { "role": "primary", "displayName": "Floodlight Yellow", "canonical": "#ffc400", "cssVar": "--amarelo", "contrast": { "sobre-amarelo": "13.15:1", "fundo-claro (as text, forbidden)": "1.6:1" }, "tonalRamp": ["#3d2b00", "#5c4200", "#7d5a00", "#a17400", "#c79000", "#ffc400", "#ffd54d", "#fff1c2"] },
+      "amarelo-hover": { "role": "primary", "displayName": "Pale Floodlight", "canonical": "#ffd54d", "cssVar": "--amarelo-hover", "tonalRamp": ["#3d2b00", "#5c4200", "#7d5a00", "#a17400", "#c79000", "#ffc400", "#ffd54d", "#fff1c2"] },
+      "sobre-amarelo": { "role": "neutral", "displayName": "Ink On Yellow", "canonical": "#000000", "cssVar": "--sobre-amarelo", "tonalRamp": ["#000000", "#121212", "#1e1e1e", "#2e2e2c", "#4a4a46", "#73736d", "#c4c4be", "#ffffff"] },
+      "linha": { "role": "neutral", "displayName": "Halfway Line", "canonical": "rgba(255, 255, 255, 0.22)", "cssVar": "--linha", "note": "Decorative only, below 3:1.", "tonalRamp": ["#1a1a1a", "#262626", "#333333", "#383838", "#444444", "#555555", "#777777", "#999999"] },
+      "fundo-claro": { "role": "neutral", "displayName": "White Ground", "canonical": "#ffffff", "cssVar": "--fundo (light scheme)", "tonalRamp": ["#1e1e1e", "#3a3a3a", "#5a5a5a", "#7a7a7a", "#a0a0a0", "#c8c8c8", "#e8e8e8", "#ffffff"] },
+      "painel-claro": { "role": "neutral", "displayName": "Chalk", "canonical": "#f1f1ec", "cssVar": "--painel (light scheme)", "tonalRamp": ["#1e1e1c", "#33332f", "#4a4a46", "#73736d", "#9a9a94", "#c4c4be", "#e2e2dc", "#f1f1ec"] },
+      "texto-claro": { "role": "neutral", "displayName": "Black Type", "canonical": "#000000", "cssVar": "--texto (light scheme)", "tonalRamp": ["#000000", "#121212", "#1e1e1e", "#2e2e2c", "#4a4a46", "#73736d", "#c4c4be", "#ffffff"] },
+      "texto-2-claro": { "role": "neutral", "displayName": "Dark Stone", "canonical": "#555550", "cssVar": "--texto-2 (light scheme)", "contrast": { "fundo-claro": "7.50:1", "painel-claro": "6.62:1" }, "tonalRamp": ["#1e1e1c", "#33332f", "#4a4a46", "#555550", "#73736d", "#9a9a94", "#c4c4be", "#f1f1ec"] },
+      "linha-claro": { "role": "neutral", "displayName": "Chalk Line", "canonical": "rgba(0, 0, 0, 0.2)", "cssVar": "--linha (light scheme)", "note": "Decorative only.", "tonalRamp": ["#333333", "#555555", "#777777", "#999999", "#bbbbbb", "#cccccc", "#dddddd", "#eeeeee"] }
+    },
+    "semanticRoles": [
+      { "name": "--destaque-texto", "dark": "#ffc400", "light": "#000000", "purpose": "Attention text: the help number 1414 (footer call link) and the three report numerals. Yellow only on dark." },
+      { "name": "--borda-campo", "dark": "#9a9a94", "light": "#555550", "more-contrast": "var(--texto)", "purpose": "Edges of fields, options and person messages (5.89:1 on panel, 7.42:1 on black)." },
+      { "name": "--foco", "dark": "#ffc400", "light": "#000000", "purpose": "3px focus ring and caret colour." },
+      { "name": "--realce-borda", "dark": "#ffc400", "light": "#000000", "purpose": "Selected option, highlighted contact, result box, status box, risk message, accent-color." }
+    ],
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The h1 campaign name only." },
+      "numeral": { "displayName": "Numeral", "purpose": "Report statistics in destaque-texto, tabular figures." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2; same weight family as the call block's main line." },
+      "title": { "displayName": "Title", "purpose": "h3 card and subsection titles." },
+      "body": { "displayName": "Body", "purpose": "All running text, 65ch max." },
+      "label": { "displayName": "Label", "purpose": "Nav links, field labels, options; notes and hints at 400 in texto-2." },
+      "button": { "displayName": "Button", "purpose": "Every botao." }
+    },
+    "shadows": [],
+    "focus": [
+      { "name": "anel-foco", "value": "outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 0.25rem", "purpose": "Global :focus-visible ring; inputs use a 2px offset." }
+    ],
+    "motion": [
+      { "name": "ease-surgir", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Shared easing for message entry and FAQ icon rotation." },
+      { "name": "surgir", "value": "220ms; opacity 0 to 1, translateY(0.4rem) to none", "purpose": "Assistant message entry. Reduced-motion gated." },
+      { "name": "rodar-icone", "value": "200ms; rotate(45deg) on details[open]", "purpose": "FAQ plus icon. Reduced-motion gated." },
+      { "name": "scroll-suave", "value": "scroll-behavior: smooth", "purpose": "Anchor navigation. Reduced-motion gated." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "48rem", "purpose": "Contacts to two columns; statistic rows to numeral + description." }
+    ],
+    "schemes": [
+      { "name": "dark", "query": "default", "purpose": "Primary scheme." },
+      { "name": "light", "query": "prefers-color-scheme: light", "purpose": "Inverted ground; yellow fills kept; yellow text and outlines go black." },
+      { "name": "more-contrast", "query": "prefers-contrast: more", "purpose": "texto-2, linha and borda-campo collapse to texto." },
+      { "name": "forced-colors", "query": "forced-colors: active", "purpose": "2px CanvasText border on every filled surface; heart mark to CanvasText." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "botao-cheio",
+      "description": "Yellow filled action for calls and the main step of a flow.",
+      "html": "<button class=\"ds-botao ds-botao-cheio\">Ligar 1414</button>",
+      "css": ".ds-botao { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3rem; min-width: 2.75rem; padding: 0.65rem 1.25rem; border: 2px solid transparent; border-radius: var(--raio-botao, 0.75rem); font-family: var(--fonte-titulo, 'Poppins', 'Segoe UI', system-ui, sans-serif); font-weight: 700; font-size: 1.0625rem; line-height: 1.25; text-decoration: none; cursor: pointer; } .ds-botao-cheio { background: var(--amarelo, #ffc400); border-color: var(--amarelo, #ffc400); color: var(--sobre-amarelo, #000); } .ds-botao-cheio:hover { background: var(--amarelo-hover, #ffd54d); border-color: var(--amarelo-hover, #ffd54d); } .ds-botao:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; }"
+    },
+    {
+      "name": "Outlined Button",
+      "kind": "button",
+      "refersTo": "botao-contorno",
+      "description": "Default secondary route; white border on black, panel fill on hover.",
+      "html": "<button class=\"ds-botao-contorno\">Fazer a triagem</button>",
+      "css": ".ds-botao-contorno { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.65rem 1.25rem; background: transparent; border: 2px solid var(--texto, #fff); border-radius: var(--raio-botao, 0.75rem); color: var(--texto, #fff); font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 700; font-size: 1.0625rem; line-height: 1.25; cursor: pointer; } .ds-botao-contorno:hover { background: var(--painel, #1e1e1e); } .ds-botao-contorno:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; }"
+    },
+    {
+      "name": "Quick Reply",
+      "kind": "chip",
+      "refersTo": "botao-pequeno",
+      "description": "Assistant suggested reply: panel fill, stone border.",
+      "html": "<button class=\"ds-botao-pequeno\">Preciso de ajuda</button>",
+      "css": ".ds-botao-pequeno { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0.5rem 1rem; background: var(--painel, #1e1e1e); border: 2px solid var(--borda-campo, #9a9a94); border-radius: var(--raio-botao, 0.75rem); color: var(--texto, #fff); font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 700; font-size: 1rem; cursor: pointer; } .ds-botao-pequeno:hover { border-color: var(--texto, #fff); } .ds-botao-pequeno:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; }"
+    },
+    {
+      "name": "Call Block",
+      "kind": "custom",
+      "refersTo": "ligar",
+      "description": "The floodlit object: full-width yellow tel link to 1414, once, in the opening.",
+      "html": "<a class=\"ds-ligar\" href=\"tel:1414\"><span class=\"ds-ligar-apelo\">Fala. Liga 1414.</span><span class=\"ds-ligar-nota\">Linha confidencial. Toca para ligar.</span></a>",
+      "css": ".ds-ligar { display: block; padding: 1.25rem 1.5rem 1.35rem; border: 2px solid var(--amarelo, #ffc400); border-radius: 1.25rem; background: var(--amarelo, #ffc400); color: var(--sobre-amarelo, #000); text-decoration: none; } .ds-ligar:hover { background: var(--amarelo-hover, #ffd54d); border-color: var(--amarelo-hover, #ffd54d); } .ds-ligar:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; } .ds-ligar-apelo { display: block; font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 800; font-size: clamp(2rem, 1.4rem + 3vw, 3rem); line-height: 1.05; letter-spacing: -0.02em; } .ds-ligar-nota { display: block; margin-top: 0.5rem; font-size: 1rem; font-weight: 700; }"
+    },
+    {
+      "name": "Highlighted Contact",
+      "kind": "card",
+      "refersTo": "contacto",
+      "description": "Panel card for a help contact; the 1414 one carries a 2px realce-borda.",
+      "html": "<div class=\"ds-contacto ds-contacto-destaque\"><h3>1414</h3><p>Linha confidencial para quem joga e para quem está perto.</p></div>",
+      "css": ".ds-contacto { display: flex; flex-direction: column; gap: 0.25rem; padding: 1.5rem; background: var(--painel, #1e1e1e); border-radius: var(--raio, 1rem); color: var(--texto, #fff); font-family: var(--fonte-texto, 'DM Sans', system-ui, sans-serif); } .ds-contacto h3 { margin: 0 0 0.5rem; font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 800; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2rem); line-height: 1.25; } .ds-contacto p { margin: 0; } .ds-contacto-destaque { border: 2px solid var(--realce-borda, #ffc400); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "campo-texto",
+      "description": "Black well with stone border; ring plus text-colour border on focus.",
+      "html": "<label class=\"ds-campo\"><span>E-mail</span><input class=\"ds-input\" type=\"email\" placeholder=\"nome@exemplo.pt\"></label>",
+      "css": ".ds-campo { display: block; font-weight: 700; color: var(--texto, #fff); font-family: var(--fonte-texto, 'DM Sans', system-ui, sans-serif); } .ds-input { display: block; width: 100%; margin-top: 0.5rem; min-height: 3rem; padding: 0.6rem 0.9rem; font: inherit; font-weight: 400; color: var(--texto, #fff); background: var(--fundo, #000); border: 2px solid var(--borda-campo, #9a9a94); border-radius: var(--raio-botao, 0.75rem); } .ds-input:hover { border-color: var(--texto, #fff); } .ds-input:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 2px; border-color: var(--texto, #fff); } .ds-input::placeholder { color: var(--texto-2, #9a9a94); opacity: 1; }"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "opcao",
+      "description": "Large radio tile for screening answers; 3px realce-borda when selected.",
+      "html": "<label class=\"ds-opcao\"><input type=\"radio\" name=\"ds-p\" checked> Sim</label>",
+      "css": ".ds-opcao { display: flex; align-items: center; gap: 0.75rem; min-height: 3.5rem; padding: 0.5rem 1rem; border: 2px solid var(--borda-campo, #9a9a94); border-radius: var(--raio-botao, 0.75rem); color: var(--texto, #fff); font-family: var(--fonte-texto, 'DM Sans', system-ui, sans-serif); font-weight: 700; cursor: pointer; accent-color: var(--realce-borda, #ffc400); } .ds-opcao:hover { border-color: var(--texto, #fff); } .ds-opcao:has(input:checked) { border-color: var(--realce-borda, #ffc400); border-width: 3px; } .ds-opcao:has(input:focus-visible) { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; } .ds-opcao input { width: 1.5rem; height: 1.5rem; margin: 0; } .ds-opcao input:focus-visible { outline: none; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Wordmark with yellow heart mark and a wrapping row of 44px bold links.",
+      "html": "<nav class=\"ds-topo\"><a class=\"ds-marca\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3.1 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.7 0 5.9 3.8 4.4 7.2C19.5 16.4 12 21 12 21z\"/></svg>Fora de Jogo</a><ul class=\"ds-nav\"><li><a href=\"#\">Ajuda</a></li><li><a href=\"#\">Triagem</a></li><li><a href=\"#\">Assistente</a></li></ul></nav>",
+      "css": ".ds-topo { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.25rem 1.5rem; padding: 0.75rem 1rem; color: var(--texto, #fff); } .ds-marca { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 800; font-size: 1.125rem; color: inherit; text-decoration: none; } .ds-marca svg { width: 1.25rem; height: 1.25rem; fill: var(--amarelo, #ffc400); } .ds-nav { display: flex; flex-wrap: wrap; gap: 0 0.25rem; margin: 0 -0.625rem; padding: 0; list-style: none; } .ds-nav a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 0.625rem; font-family: var(--fonte-texto, 'DM Sans', system-ui, sans-serif); font-size: 1rem; font-weight: 700; color: inherit; text-decoration: none; } .ds-nav a:hover { text-decoration: underline; } .ds-nav a:focus-visible, .ds-marca:focus-visible { outline: 3px solid var(--foco, #ffc400); outline-offset: 3px; border-radius: 0.25rem; }"
+    },
+    {
+      "name": "Statistic Row",
+      "kind": "custom",
+      "refersTo": "numeral",
+      "description": "Hairline-separated report figure in destaque-texto with description and source.",
+      "html": "<dl class=\"ds-dados\"><div class=\"ds-dado\"><dt>69,9%</dt><dd>das apostas desportivas são no futebol.<cite>SRIJ, 2026</cite></dd></div></dl>",
+      "css": ".ds-dados { margin: 0; color: var(--texto, #fff); font-family: var(--fonte-texto, 'DM Sans', system-ui, sans-serif); } .ds-dado { padding-block: 1.25rem; border-top: 1px solid var(--linha, rgba(255,255,255,0.22)); border-bottom: 1px solid var(--linha, rgba(255,255,255,0.22)); } .ds-dado dt { font-family: var(--fonte-titulo, 'Poppins', system-ui, sans-serif); font-weight: 800; font-size: clamp(3rem, 2rem + 5vw, 4.75rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--destaque-texto, #ffc400); } .ds-dado dd { margin: 0.5rem 0 0; max-width: 60ch; } .ds-dado cite { display: block; margin-top: 0.25rem; font-size: 1rem; font-style: normal; color: var(--texto-2, #9a9a94); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Floodlit Number",
+    "overview": "A quiet stadium at night. The ground is pure black, the type is white and very bold, and exactly one thing is lit: the way to help. Yellow (#FFC400) is the floodlight; it falls on the call to 1414, on the primary action, and on the focus ring, and almost nowhere else. Everything around it stays dark, flat and calm so a visitor in distress, on a phone, finds the next step without searching.\n\nThe page is a single editorial column of large Poppins ExtraBold headlines over generous DM Sans body text at 18px. Density is low on purpose: sections are separated by deep vertical rhythm and a thin, 22%-white hairline, the halfway line of a pitch, with its centre circle drawn once under the opening. Panels in #1E1E1E with 1rem corners hold the interactive parts (screening, assistant, contacts); they are lifted by tone, never by shadow.\n\nAccessibility is a design input, not a layer: WCAG 2.2 AA contrast is verified per pair, targets are at least 44px, focus is a 3px ring, and the system ships a light scheme, a `prefers-contrast: more` scheme and a forced-colors fallback. The page must never resemble a betting site: no neon, no red/green signalling, no odds-board glare.",
+    "keyCharacteristics": [
+      "Black ground, white type, one yellow for action and attention.",
+      "Poppins 800 headlines with tight negative tracking; DM Sans body at 1.125rem / 1.6.",
+      "Single 46rem column; deep, fluid section spacing.",
+      "Flat: tonal panels and hairlines, no shadows.",
+      "Pitch-line hairlines as the only ornament.",
+      "Every state works in dark, light, more-contrast and forced-colors."
+    ],
+    "rules": [
+      { "name": "The One Floodlight Rule", "body": "Yellow is reserved (campaign report §4.4: heart, alerts, buttons, help number; §15.1: the data number large and yellow as focal point). It appears only as filled actions, the focus ring, the selection/highlight border (realce-borda), the brand heart mark, and, on dark ground only, as text for the attention role (destaque-texto): the help number 1414 and the three report numerals. Never other decoration.", "section": "colors" },
+      { "name": "The No Yellow Text On Light Rule", "body": "Yellow is never text on a light background (1.6:1 on white). Any role that uses yellow text in the dark scheme must switch to black in the light scheme, as destaque-texto, foco and realce-borda already do.", "section": "colors" },
+      { "name": "The Hairline Is Not A Boundary Rule", "body": "linha is decorative (below 3:1). Anything a person must perceive (field edges, option edges, selected states, errors) uses borda-campo, texto or realce-borda at 2–3px.", "section": "colors" },
+      { "name": "The Root Size Rule", "body": "html stays at 100% and every size is rem or a rem-based clamp, so the reader's own font-size setting scales the whole system. Body never drops below 1rem.", "section": "typography" },
+      { "name": "The Weight Carries Rank Rule", "body": "Hierarchy is built from size and Poppins weight (700/800), never from colour or uppercase. No letter-spaced uppercase labels.", "section": "typography" },
+      { "name": "The Lit-Not-Lifted Rule", "body": "Importance is shown by light (yellow fill, yellow or black highlight border), never by elevation. A surface that matters more gets brighter, not higher.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** keep yellow (#FFC400) for filled actions, the focus ring, highlight borders, the heart mark, and, on dark ground, the 1414 number and report numerals; text on yellow is always black.",
+      "**Do** switch every yellow-as-text or yellow-outline role to black in the light scheme.",
+      "**Do** verify contrast for every new pair and keep secondary text at #9A9A94 on dark and #555550 on light (all pairs above 5.8:1).",
+      "**Do** give every interactive element at least 44px of target and a 3px focus ring with 3px offset.",
+      "**Do** separate sections with espaco-seccao and a 1px linha hairline; keep the single 46rem column.",
+      "**Do** size everything in rem or rem-based clamp(), body at 1.125rem / 1.6, lines at 65ch.",
+      "**Do** gate motion behind prefers-reduced-motion and keep it under 250ms on cubic-bezier(0.16, 1, 0.3, 1).",
+      "**Do** add a 2px CanvasText border under forced-colors to any new filled surface."
+    ],
+    "donts": [
+      "**Don't** use yellow as text on a light background (1.6:1).",
+      "**Don't** use yellow for decoration, section accents or large fills other than actions; outside fills, yellow is limited to the heart mark, the 1414 number and the report numerals.",
+      "**Don't** add box-shadows or elevation; depth is tone and border only.",
+      "**Don't** use red/green signalling or neon colours, or anything that reads as a betting interface.",
+      "**Don't** use the linha hairline as the only edge of something a person must perceive.",
+      "**Don't** set body text below 1rem or fix the root font size in px.",
+      "**Don't** introduce letter-spaced uppercase labels; rank comes from Poppins size and weight."
+    ]
+  }
+}
