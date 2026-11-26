@@ -207,6 +207,11 @@ p.por-confirmar { display: block; width: fit-content; max-width: 100%; margin-bo
   gap: 0.25rem 1.5rem;
 }
 
+.topo__marcas {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 .marca {
   display: inline-flex;
   align-items: center;
@@ -217,7 +222,9 @@ p.por-confirmar { display: block; width: fit-content; max-width: 100%; margin-bo
   font-size: 1.125rem;
   text-decoration: none;
 }
-.marca__coracao { width: 1.25rem; height: 1.25rem; fill: var(--amarelo); }
+.marca__logo { display: block; width: 3rem; height: 3rem; border-radius: 0.5rem; }
+.topo__separador { width: 1px; height: 2.25rem; background: var(--linha); }
+.emblema { display: block; width: 3rem; height: 3rem; }
 
 .nav {
   display: flex;
@@ -743,11 +750,13 @@ input:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; borde
   color: var(--destaque-texto);
 }
 .rodape__titulo { font-size: 1.25rem; margin-top: 2rem; }
+.rodape__clube { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.rodape__clube p { margin: 0; }
+.rodape__emblema { flex: none; width: 3.5rem; height: 3.5rem; }
 
 /* ---------- Cores forçadas (Windows, alto contraste) ---------- */
 @media (forced-colors: active) {
   .botao, .ligar, .opcao, .contacto, .chat, .triagem, .vantagem, .resultado, .mensagem { border: 2px solid CanvasText; }
-  .marca__coracao { fill: CanvasText; }
 }
 
 /* ---------- Impressão ---------- */
