@@ -729,9 +729,26 @@ input:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; borde
 }
 .perguntas details[open] .perguntas__icone { transform: rotate(45deg); }
 @media (prefers-reduced-motion: no-preference) {
-  .perguntas__icone { transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .perguntas__icone,
+  .regulamento .perguntas__icone { transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1); }
 }
 .perguntas details p { padding-bottom: 1.25rem; }
+.regulamento { margin-top: 1rem; border-top: 1px solid var(--linha); }
+.regulamento summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3rem;
+  padding-block: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.regulamento summary::-webkit-details-marker { display: none; }
+.regulamento[open] .perguntas__icone { transform: rotate(45deg); }
+.regulamento ol { margin: 0.5rem 0 0; padding-left: 1.5rem; font-size: 1rem; }
+.regulamento li { margin-bottom: 0.75rem; max-width: 65ch; }
 #clube h3 { margin-top: 2.5rem; }
 
 /* ---------- Rodapé ---------- */

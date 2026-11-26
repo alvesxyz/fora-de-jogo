@@ -245,9 +245,9 @@
     var RESPOSTA_AJUDA = {
       paragrafos: [
         "Obrigado por escreveres. Pedir ajuda é a jogada certa, e não estás sozinho.",
-        "A linha 1414 do ICAD é confidencial. Do outro lado está uma pessoa que te pode ouvir e orientar."
+        "A linha 1414 do ICAD é gratuita e confidencial, nos dias úteis das 10h às 18h. Do outro lado está uma pessoa que te pode ouvir e orientar. Fora desse horário, liga para o SNS 24."
       ],
-      ligacoes: [LIGAR_1414, { texto: "Fazer a triagem anónima", href: "#triagem" }]
+      ligacoes: [LIGAR_1414, { texto: "Ligar SNS 24", href: "tel:808242424" }, { texto: "Fazer a triagem anónima", href: "#triagem" }]
     };
 
     // A ordem conta: a primeira regra que corresponder dá a resposta.
@@ -313,10 +313,10 @@
         chaves: ["autoexclus", "auto exclus", "auto-exclus", "srij", "bloquear", "proibir"],
         resposta: {
           paragrafos: [
-            "O SRIJ permite pedir a autoexclusão, para deixares de ter acesso aos sites de jogo legais em Portugal. O endereço do portal ainda está por confirmar nesta página [A CONFIRMAR].",
+            "O SRIJ permite pedir a autoexclusão, para deixares de ter acesso aos sites de jogo legais em Portugal. O pedido é feito no portal oficial.",
             "Se quiseres falar com alguém sobre isto, a linha 1414 pode ajudar."
           ],
-          ligacoes: [LIGAR_1414]
+          ligacoes: [{ texto: "Pedir a autoexclusão no SRIJ", href: "https://autoexclusaoonline.srij.turismodeportugal.pt/requerimento" }, LIGAR_1414]
         }
       },
       {
