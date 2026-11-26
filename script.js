@@ -605,7 +605,8 @@
          - guardar o registo do consentimento (texto aceite, data e hora);
          - confirmar o e-mail (opt-in duplo) e incluir a opção de cancelar;
          - atribuir as 100 vagas por ordem de inscrição, com 50 reservadas a quem
-           não está na base de sócios (cruzamento feito pelo clube);
+           não é sócio (declarado pela própria pessoa na resposta ao e-mail);
+         - nunca partilhar o e-mail com terceiros, incluindo o clube;
          - nunca receber nem ligar o resultado da triagem. */
 
     form.addEventListener("submit", function (evento) {
